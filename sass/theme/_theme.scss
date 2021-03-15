@@ -3527,10 +3527,10 @@ ul.tabsz li{
   padding: 2vw;
   text-align: center;
   h2 {
-    font-size: 1.8vw;
+    font-size: 28px;
   }
   p {
-    font-size: 1vw;
+    font-size: 14px;
   }
   img {
     max-width: 200px;
@@ -3566,6 +3566,7 @@ ul.tabsz li{
     font-size: 14px;
     left: 0;
     top: 2px;
+    display: block !important;
   }
   .wcpopup-select-box select {
     border: 0 !important;
@@ -3579,6 +3580,6 @@ ul.tabsz li{
 .wpfFilterContent {
   .wpfCheckbox {
     display: none;
-   display: none;
+    display: none;
   } 
 }

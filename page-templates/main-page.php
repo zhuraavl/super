@@ -46,7 +46,7 @@ $container = get_theme_mod( 'understrap_container_type' );
            
            
             
-            <section class="pb-2 position-relative">
+            <section class="py-3 position-relative">
                     
                     <div class="main-product-line">
                       <?php echo do_shortcode( "[featured_products per_page=”12″ columns=”4″ orderby=”date” order=”ASC”]" ); ?>
