@@ -1,0 +1,134 @@
+.checkout-form-inputs {
+  label {
+    display: block;
+    font-size: 12px;
+    width: 100%;
+    opacity: .7;
+  }
+  .woocommerce-input-wrapper {
+    width: 100%;
+    display: block;
+    input {
+      height: auto;
+      padding: 13px 15px 14px;
+      border: 1px solid #007bff;
+    }
+  }
+  select {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  
+}
+
+.woocommerce-checkout-review-order {
+  .product-name {
+    width: 90%;
+    position: relative;
+    .cqoc_product_name {
+      display: inline-block;
+    }
+  }
+  .product-total {
+    width: 15%;
+    vertical-align: top !important;
+  }
+  .item-shipping_class {
+    padding-left: 60px;
+    font-size: 14px;
+    margin-bottom: 0;
+  strong {
+    display: none;
+  } 
+}
+.variation {
+  padding-left: 60px;
+  margin-top: -25px;
+  dt {
+    display: none !important;
+    
+  } 
+  p {
+    font-size: 14px;
+  }
+}
+}
+
+
+
+#content table.shop_table a.remove {
+  position: absolute;
+  top: 10px;
+  right: -50%;
+}
+.shop_table tfoot {
+  th {
+    width: 10%;
+  } 
+  td {
+    width: 90%;
+  }
+}
+
+
+.table-all:first-child {
+  display: none;
+}
+
+
+
+
+
+.woocommerce table.shop_table tbody th, .woocommerce table.shop_table tfoot td, .woocommerce table.shop_table tfoot th {
+  font-weight: 400;
+}
+
+
+
+.ts-product-image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.cqoc_product_name {
+  padding-left: 60px;
+  margin-top: -50px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  @include media-breakpoint-down(xs) {
+    margin-top: -20px;
+  }
+}
+
+
+.cart_item .quantity {
+  
+}
+.cart_item .qib-container {
+  padding-left: 60px;
+  button {
+    background: transparent;
+    border-color: #007bff;
+    color: #007bff;
+  }
+  .input-text.qty.text {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+}
+
+
+.place-order {
+  .button.alt {
+    background: #007bff !important;
+    font-weight: 400;
+    font-size: 18px !important;
+    padding: 10px 20px !important;
+  }
+}
+
+
+#ship-to-different-address {
+  margin-top: 25px;
+}
