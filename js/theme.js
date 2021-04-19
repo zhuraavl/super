@@ -7153,7 +7153,15 @@ jQuery(document).ready(function ($) {
   //    $('.order-total .left-corner').text('Итого');
   //  
   //});
-  //  $(function(){
+
+  $(function () {
+    if ($('.geo-detected:contains("Россия")').length > 0) {
+      $(".ua-phones").addClass("d-none");
+      $(".ru-phones").removeClass("d-none");
+    } else {}
+
+    ;
+  }); //  $(function(){
   //     if ($('.phone-numbers:contains("Украина")').length > 0) {
   //    $(".ua-phones").addClass("d-inline-block");
   //    $(".ua-text").addClass("d-block");

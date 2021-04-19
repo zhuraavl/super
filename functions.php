@@ -418,3 +418,38 @@ function single_product_page_title($title, $id) {
 
     return $title;
 }
+
+
+
+add_filter( 'script_loader_src', 'sdt_remove_ver_css_js', 9999, 2 );
+
+function sdt_remove_ver_css_js( $src, $handle ) 
+{
+    $handles_with_version = [ 'style' ]; // <-- Adjust to your needs!
+
+    if ( strpos( $src, 'ver=' ) && ! in_array( $handle, $handles_with_version, true ) )
+        $src = remove_query_arg( 'ver', $src );
+
+    return $src;
+}
+
+
+
+add_filter( 'woocommerce_cart_item_name', function( $link_text, $cart_item, $cart_item_key ) {
+
+	$_product = $cart_item['data'];
+
+	$brands = implode(', ', wp_get_post_terms( $_product->get_id(), 'pwb-brand', ['fields' => 'names'] ) );
+	$link_text = '<div>' . __( '', 'perfect-woocommerce-brands' ) . '' . $brands . '</div>';
+
+	$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
+
+	if ( ! $product_permalink ) {
+		$link_text .= $_product->get_name();
+	} else {
+		$link_text .= sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $_product->get_name() );
+	}
+
+	return $link_text;
+
+}, 9, 3 );

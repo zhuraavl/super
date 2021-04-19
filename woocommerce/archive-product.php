@@ -65,7 +65,7 @@ do_action( 'woocommerce_before_main_content' );
   <div class="container-fluid archive-products-list">
     <div class="row">
       <div class="col-12 col-md-2 px-0">
-       <?php echo do_shortcode( '[wpf-filters id=1]' ); ?>
+       <?php echo do_shortcode( '[woof]' ); ?>
         
       </div>
       <div class="col-12 col-md-10 pt-md-4 px-0">
@@ -209,7 +209,7 @@ endif;
 
 
 
-<div class="container-fluid mb-5 recent-view">
+<div class="container-fluid mb-5 recent-view d-none">
   <div class="row pt-5">
     <div class="col-12 px-0">
       <?php echo do_shortcode( '[rvp_show no_products="12"  slider_use="false"]' ); ?>

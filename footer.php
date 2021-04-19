@@ -70,7 +70,7 @@ $container = get_theme_mod( 'understrap_container_type' );
           <a href="tel:+380500150999">+38 050 015 09 99</a><br><a href="tel:+380678150999">+38 067 815 09 99</a>
         </div>
         <span class="ru-phones d-none">
-          <a href="tel:+74993401489">+7 499 340 14 89</a>
+          <a class="d-block mt-4" href="tel:+74993401489">+7 499 340 14 89</a>
         </span></h3>
       </div>
       
@@ -83,10 +83,21 @@ $container = get_theme_mod( 'understrap_container_type' );
        
   
        
-        <h2 class="footer-title py-5">Подпишись на наши соцcети чтобы узнать о вкусных новинках</h2>
+        <h2 class="footer-title py-5">Подпишись на наши соцcети, чтобы узнать о вкусных новинках</h2>
         <div class="pt-md-2 pb-md-1 social-footer text-center">
-          <a href="https://www.instagram.com/superalex.co" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/instagram.svg" alt=""></a>
+          <a href="https://www.instagram.com/superalex.co" target="_blank" class="ua-phones"><img src="<?php bloginfo('template_directory'); ?>/img/instagram.svg" alt=""></a>
+          
+          
+          
+          <a href="https://www.instagram.com/superalex_ru" target="_blank" class="ru-phones d-none"><img src="<?php bloginfo('template_directory'); ?>/img/instagram.svg" alt=""></a>
+          
+          
+          
           <a href="https://www.facebook.com/superalex.co"  target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/facebook.svg" alt=""></a>
+          
+          
+          <a href="https://www.vk.com/superalex_ru"  target="_blank"  class="ru-phones d-none"><img src="<?php bloginfo('template_directory'); ?>/img/vk.svg" alt=""></a>
+          
           
           <a href="https://t.me/SA_SuperAlex"  target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/telegram.svg" alt=""></a>
           
@@ -163,7 +174,7 @@ $container = get_theme_mod( 'understrap_container_type' );
          <div class="pay-img text-center mb-3">
       <img src="<?php echo get_template_directory_uri(); ?>/img/foot-pay-sys.png" alt="" width="320px" style="margin:auto">
       </div>
-        <p>Copyright © INTERTRADE SUPPLIES LIMITED 2020. All rights reserved.</p>
+        <p>Copyright © INTERTRADE SUPPLIES LIMITED 2021. All rights reserved.</p>
         <p> Stasinou 1, Mitsi building 1, 1st  floor, Flat/Office 4, Plateia eleftherias, 1060, Nicosia, CYPRUS reg #: HE 385874</p>
       </div>
     </div>
@@ -205,38 +216,41 @@ window.addEventListener('load', function(){
       if(status == cookieconsent.status.allow) myScripts();
     },
     onStatusChange: function(status) {
-      if (this.hasConsented()) myScripts();
+//      if (this.hasConsented()) myScripts();
     }
   })
 });
-function myScripts() {
-
-   // Paste here your scripts that use cookies requiring consent. See examples below
-
-   // Google Analytics, you need to change 'UA-00000000-1' to your ID
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-00000000-1', 'auto');
-      ga('send', 'pageview');
-
-
-   // Facebook Pixel Code, you need to change '000000000000000' to your PixelID
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '000000000000000');
-      fbq('track', 'PageView');
-
-}
+//function myScripts() {
+//
+//   // Paste here your scripts that use cookies requiring consent. See examples below
+//
+//   // Google Analytics, you need to change 'UA-00000000-1' to your ID
+//      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+//          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+//          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+//      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+//      ga('create', 'UA-00000000-1', 'auto');
+//      ga('send', 'pageview');
+//
+//
+//   // Facebook Pixel Code, you need to change '000000000000000' to your PixelID
+//      !function(f,b,e,v,n,t,s)
+//      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+//          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+//          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+//          n.queue=[];t=b.createElement(e);t.async=!0;
+//          t.src=v;s=b.getElementsByTagName(e)[0];
+//          s.parentNode.insertBefore(t,s)}(window, document,'script',
+//          'https://connect.facebook.net/en_US/fbevents.js');
+//      fbq('init', '000000000000000');
+//      fbq('track', 'PageView');
+//
+//}
 
 </script>
+
+
+
 
 
 
